@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+  <section class="page-header">
+    <h1 class="page-title">Главная</h1>
+    <p class="page-subtitle">Сводка по заказам. Данные появятся после подключения моделей.</p>
+  </section>
+
+  <section class="grid grid--4" aria-label="Показатели">
+    <article class="card stat-card">
+      <h2 class="stat-card__label">Новые заказы</h2>
+      <p class="stat-card__value">—</p>
+    </article>
+    <article class="card stat-card">
+      <h2 class="stat-card__label">В работе</h2>
+      <p class="stat-card__value">—</p>
+    </article>
+    <article class="card stat-card">
+      <h2 class="stat-card__label">Выполнено</h2>
+      <p class="stat-card__value">—</p>
+    </article>
+    <article class="card stat-card">
+      <h2 class="stat-card__label">Ждут подтверждения</h2>
+      <p class="stat-card__value">—</p>
+    </article>
+  </section>
+
+  <section class="grid grid--2">
+    <article class="card">
+      <h2 class="card__title">Последние заказы</h2>
+      <p class="empty-state">Пока нет данных.</p>
+      <a class="btn btn--secondary" href="{% url 'orders:list' %}">Все заказы</a>
+    </article>
+    <article class="card">
+      <h2 class="card__title">Быстрые действия</h2>
+      <p class="empty-state">Кнопки появятся вместе с формой заказа.</p>
+    </article>
+  </section>
+{% endblock %}

@@ -1,0 +1,50 @@
+# --- Python / Django ---
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+venv/
+.venv/
+env/
+*.log
+media/
+staticfiles/
+*.pot
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Node / React Native / Expo ---
+node_modules/
+npm-debug.log*
+yarn-error.log
+.expo/
+dist/
+build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# --- Desktop (Tkinter): сборки PyInstaller ---
+desktop/build/
+desktop/dist/
+*.spec
+
+# --- Design: тяжёлые исходники (храним в Figma / на общем диске) ---
+design/*.psd
+design/*.ai
+design/*.sketch
+design/**/*.psd
+design/**/*.ai
+design/**/*.sketch
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- ОС ---
+.DS_Store
+Thumbs.db

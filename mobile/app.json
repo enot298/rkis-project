@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Учёт заказов",
+    "slug": "orders-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.orders"
+    },
+    "android": {
+      "package": "com.example.orders"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": { "minSdkVersion": 26 },
+          "ios": { "deploymentTarget": "15.1" }
+        }
+      ]
+    ]
+  }
+}

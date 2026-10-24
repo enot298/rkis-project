@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" font-family="Arial, Helvetica, sans-serif" font-size="13">
+  <title>Каркас главного окна десктопа (черновик)</title>
+  <rect width="1000" height="600" fill="#F5F7FA"/>
+  <rect x="20" y="20" width="960" height="560" fill="#FFFFFF" stroke="#1F2937"/>
+
+  <!-- Заголовок окна -->
+  <rect x="20" y="20" width="960" height="28" fill="#E5E7EB"/>
+  <text x="32" y="39" fill="#1F2937">Учёт заказов — Бухгалтер</text>
+
+  <!-- Меню -->
+  <rect x="20" y="48" width="960" height="28" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="32" y="67" fill="#1F2937">Файл</text>
+  <text x="90" y="67" fill="#1F2937">Разделы</text>
+  <text x="170" y="67" fill="#1F2937">Справка</text>
+
+  <!-- Левая навигация -->
+  <rect x="20" y="76" width="180" height="470" fill="#F5F7FA" stroke="#E5E7EB"/>
+  <rect x="32" y="90" width="156" height="32" rx="4" fill="#E8EEFC" stroke="#2B5FD9"/>
+  <text x="44" y="111" fill="#1E47A8">Заказы</text>
+  <rect x="32" y="130" width="156" height="32" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="44" y="151" fill="#1F2937">Клиенты</text>
+  <rect x="32" y="170" width="156" height="32" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="44" y="191" fill="#1F2937">Платежи</text>
+
+  <!-- Рабочая область -->
+  <rect x="200" y="76" width="780" height="470" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="224" y="112" fill="#1F2937" font-size="20" font-weight="700">Заголовок раздела</text>
+  <text x="224" y="136" fill="#6B7280">Рабочая область: таблицы и формы раздела</text>
+  <rect x="224" y="160" width="732" height="360" fill="none" stroke="#2B5FD9" stroke-dasharray="6 4"/>
+
+  <!-- Статус-бар -->
+  <rect x="20" y="546" width="960" height="34" fill="#F5F7FA" stroke="#E5E7EB"/>
+  <text x="32" y="568" fill="#1F2937">Строка состояния: текущий раздел</text>
+  <text x="760" y="568" fill="#6B7280">Сервер: адрес API</text>
+
+  <text x="20" y="596" fill="#6B7280" font-size="10">Размер окна по умолчанию 1280x720 (ТЗ: экран от 1280x720); левая панель 180px</text>
+</svg>

@@ -1,0 +1,53 @@
+{% load static %}
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="{% url 'core:home' %}">
+      <img class="brand__logo" src="{% static 'img/logo-mark.svg' %}" alt="" width="32" height="32">
+      <span class="brand__name">Учёт заказов</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" data-nav-toggle>
+      <span class="visually-hidden">Открыть меню</span>
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Основная навигация" data-nav>
+      <ul class="main-nav__list">
+        <li>
+          <a class="main-nav__link{% if request.resolver_match.namespace == 'core' %} is-active{% endif %}" href="{% url 'core:home' %}">
+            <img src="{% static 'img/icon-home.svg' %}" alt="" width="20" height="20">Главная
+          </a>
+        </li>
+        <li>
+          <a class="main-nav__link{% if request.resolver_match.namespace == 'orders' %} is-active{% endif %}" href="{% url 'orders:list' %}">
+            <img src="{% static 'img/icon-orders.svg' %}" alt="" width="20" height="20">Заказы
+          </a>
+        </li>
+        <li>
+          <a class="main-nav__link is-disabled" href="#" aria-disabled="true" title="Появится на этапе Э6">
+            <img src="{% static 'img/icon-clients.svg' %}" alt="" width="20" height="20">Клиенты
+          </a>
+        </li>
+        <li>
+          <a class="main-nav__link is-disabled" href="#" aria-disabled="true" title="Появится на этапе Э6">
+            <img src="{% static 'img/icon-products.svg' %}" alt="" width="20" height="20">Товары
+          </a>
+        </li>
+        <li>
+          <a class="main-nav__link is-disabled" href="#" aria-disabled="true" title="Появится на этапе Э6">
+            <img src="{% static 'img/icon-payments.svg' %}" alt="" width="20" height="20">Платежи
+          </a>
+        </li>
+      </ul>
+
+      <div class="user-box">
+        <img src="{% static 'img/icon-user.svg' %}" alt="" width="20" height="20">
+        {% if user.is_authenticated %}
+          <span class="user-box__name">{{ user.get_username }}</span>
+        {% else %}
+          <span class="user-box__name">Гость</span>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+</header>

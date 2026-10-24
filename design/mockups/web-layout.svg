@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" font-family="Arial, Helvetica, sans-serif" font-size="13">
+  <title>Макет базового layout веба (черновик)</title>
+  <rect width="1000" height="640" fill="#F5F7FA"/>
+
+  <!-- Шапка -->
+  <rect x="0" y="0" width="1000" height="64" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="60" y="16" width="32" height="32" rx="8" fill="#2B5FD9"/>
+  <text x="100" y="37" fill="#1F2937" font-size="15" font-weight="700">Учёт заказов</text>
+  <text x="300" y="37" fill="#1E47A8" font-weight="700">Главная</text>
+  <text x="380" y="37" fill="#1F2937">Заказы</text>
+  <text x="450" y="37" fill="#1F2937">Клиенты</text>
+  <text x="530" y="37" fill="#1F2937">Товары</text>
+  <text x="600" y="37" fill="#1F2937">Платежи</text>
+  <circle cx="872" cy="32" r="10" fill="none" stroke="#6B7280"/>
+  <text x="892" y="37" fill="#6B7280">Пользователь</text>
+  <text x="60" y="58" fill="#6B7280" font-size="10">Шапка: высота 64px, лого 32x32, навигация слева, пользователь справа</text>
+
+  <!-- Контейнер и сетка -->
+  <rect x="60" y="84" width="880" height="470" fill="none" stroke="#2B5FD9" stroke-dasharray="6 4"/>
+  <text x="68" y="100" fill="#2B5FD9" font-size="11">Контейнер: max-width 1200px, поля 16/24px, колонки с отступом 24px</text>
+
+  <text x="76" y="132" fill="#1F2937" font-size="22" font-weight="700">Заголовок страницы (h1, 28px)</text>
+
+  <!-- Карточки в 4 колонки -->
+  <g fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="76" y="152" width="200" height="90" rx="8"/>
+    <rect x="296" y="152" width="200" height="90" rx="8"/>
+    <rect x="516" y="152" width="200" height="90" rx="8"/>
+    <rect x="736" y="152" width="188" height="90" rx="8"/>
+  </g>
+  <text x="92" y="180" fill="#6B7280">Карточка (1/4)</text>
+  <text x="312" y="180" fill="#6B7280">Карточка (1/4)</text>
+  <text x="532" y="180" fill="#6B7280">Карточка (1/4)</text>
+  <text x="752" y="180" fill="#6B7280">Карточка (1/4)</text>
+
+  <!-- Две широкие карточки -->
+  <g fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="76" y="266" width="424" height="270" rx="8"/>
+    <rect x="516" y="266" width="408" height="270" rx="8"/>
+  </g>
+  <text x="92" y="294" fill="#1F2937" font-weight="700">Блок (1/2)</text>
+  <text x="532" y="294" fill="#1F2937" font-weight="700">Блок (1/2)</text>
+
+  <!-- Подвал -->
+  <rect x="0" y="580" width="1000" height="60" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="60" y="615" fill="#6B7280">Подвал: название проекта, год, версия</text>
+
+  <text x="60" y="572" fill="#6B7280" font-size="10">Брейкпоинты: 640 / 768 / 1024 / 1280px. Меньше 1024px меню сворачивается в кнопку.</text>
+</svg>

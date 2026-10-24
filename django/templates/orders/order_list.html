@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Заказы{% endblock %}
+
+{% block content %}
+  <section class="page-header page-header--row">
+    <div>
+      <h1 class="page-title">Заказы</h1>
+      <p class="page-subtitle">Список заказов. Каркас без данных.</p>
+    </div>
+    <button class="btn btn--primary" type="button" disabled>Новый заказ</button>
+  </section>
+
+  <form class="toolbar card" role="search" onsubmit="return false">
+    <div class="field">
+      <label class="field__label" for="q">Поиск</label>
+      <input class="input" id="q" name="q" type="search" placeholder="Клиент или номер заказа">
+    </div>
+    <div class="field">
+      <label class="field__label" for="status">Статус</label>
+      <select class="input" id="status" name="status">
+        <option value="">Все</option>
+        <option value="new">Новый</option>
+        <option value="in_progress">В работе</option>
+        <option value="done">Выполнен</option>
+        <option value="cancelled">Отменён</option>
+      </select>
+    </div>
+    <div class="field">
+      <label class="field__label" for="date">Дата</label>
+      <input class="input" id="date" name="date" type="date">
+    </div>
+    <button class="btn btn--secondary toolbar__submit" type="submit" disabled>Найти</button>
+  </form>
+
+  <div class="table-wrap card">
+    <table class="table">
+      <caption class="visually-hidden">Список заказов</caption>
+      <thead>
+        <tr>
+          <th scope="col">№</th>
+          <th scope="col">Клиент</th>
+          <th scope="col">Дата</th>
+          <th scope="col">Статус</th>
+          <th scope="col" class="table__num">Сумма, ₽</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table__empty">
+          <td colspan="5">Заказов пока нет.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <nav class="pagination" aria-label="Страницы">
+    <span class="pagination__item is-disabled">Назад</span>
+    <span class="pagination__item is-current">1</span>
+    <span class="pagination__item is-disabled">Вперёд</span>
+  </nav>
+{% endblock %}
